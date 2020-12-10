@@ -1,0 +1,20 @@
+extends layout.pug
+
+block hero
+    section.hero.is-primary.is-bold
+        .hero-body
+            .container
+                h1.title Juli's Shop
+                h2.subtitle Find awesome products!!
+
+//- footer queda debajo
+block content
+    .container(style="flex: 1; padding: 50px 0;")
+        label(for="name" text="Product Name")
+            input(type="text" id="name")
+                label(for="" text="Product Price")
+                    input(type="text" id="price")
+                        label(for="" text="Product Category")
+                            input(type="text" id="category")
+                                label(for="" text="Image Link")
+                                    input(type="text" id="image")
