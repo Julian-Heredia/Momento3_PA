@@ -10,20 +10,22 @@
 extends layout.pug
 
 block hero
-    section.hero.is-primary.is-bold
+    sectio.hero-style
         .hero-body
-            .container
-                h1.title Juli's Shop
-                h2.subtitle Find awesome products!!
+            .container(style="text-align:center;")
+                h1.textwhite Shopy
+                h2.textwhite awesome products!!
 
 //- footer queda debajo
 block content
     .container(style="flex: 1; padding: 50px 0;")    
         .columns.is-multiline
+           
+
             //-each product in productMocks
             each product in products
                 .column.is-one-quarter
-                    .card
+                    .card(style)
                         .card-image
                             figure.image(style="height: 190px")
                                 img(src=product.image style="height: 100%; object-fit: contain; object-position:50% 30%")
@@ -35,3 +37,4 @@ block content
                                 span Add 
                                     strong= `${product.price} USD`
                                     .column-end
+                                     

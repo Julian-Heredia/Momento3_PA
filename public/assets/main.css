@@ -14,14 +14,14 @@ body {
   padding: 50px 15px;
 }
 
-.main-hero {
+.main- {
   position: relative;
-  background: url("/static/images/hero-bg.jpg");
+  background: url("/static/images/-bg.jpg");
   background-size: cover;
   background-position: center bottom;
 }
 
-.main-hero::before {
+.main-::before {
   position: absolute;
   content: "";
   top: 0;
@@ -70,4 +70,23 @@ img.cover-image {
 
 .icon.has-text-primary {
   color: var(--primary-color) !important;
+
 }
+
+.hero-style{
+  background-color: #d10000;
+  color: #fff !important;
+  font-size: 200%;
+}
+.botones{color: #fff;
+  cursor: pointer;
+ display: block;
+  font-size:16px;
+  font-weight: 400;
+  line-height: 45px;
+  margin: 0 0 2em;
+  max-width: 160px; 
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%; }
